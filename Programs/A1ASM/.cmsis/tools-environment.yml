@@ -1,0 +1,47 @@
+cmsis-tools-environment:
+  version: 1.0.0
+  generated-by: arm.cmsis-csolution version 1.72.0
+  solution: ../A1ASM.csolution.yml
+  environment:
+    path:
+      - c:/Users/senad/.vscode/extensions/arm.vscode-cmsis-debugger-1.8.0-win32-x64/tools/pyocd
+      - c:/Users/senad/.vscode/extensions/arm.cmsis-csolution-1.72.0-win32-x64/tools/cmsis-toolbox/bin
+      - c:/Users/senad/.vscode/extensions/arm.vscode-cmsis-debugger-1.8.0-win32-x64/tools/gdb/bin
+    variables: {}
+  tools:
+    - name: pyOCD
+      version: 0.45.1
+      origin: built-in
+      provider:
+        type: vscode-extension
+        id: arm.vscode-cmsis-debugger
+      directory: c:/Users/senad/.vscode/extensions/arm.vscode-cmsis-debugger-1.8.0-win32-x64/tools/pyocd
+      manual: https://pyocd.io/docs/
+    - name: CMSIS-Toolbox
+      version: 2.15.0
+      origin: built-in
+      provider:
+        type: vscode-extension
+        id: arm.cmsis-csolution
+      directory: c:/Users/senad/.vscode/extensions/arm.cmsis-csolution-1.72.0-win32-x64/tools/cmsis-toolbox/bin
+      manual: https://open-cmsis-pack.github.io/cmsis-toolbox/
+    - name: Arm GNU GDB
+      version: 15.2.1
+      origin: built-in
+      provider:
+        type: vscode-extension
+        id: arm.vscode-cmsis-debugger
+      directory: c:/Users/senad/.vscode/extensions/arm.vscode-cmsis-debugger-1.8.0-win32-x64/tools/gdb/bin
+      manual: https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
+    - name: tools.kitware.cmake\4.3.3\bin
+      origin: installed
+      provider:
+        type: vcpkg
+        id: arm.environment-manager
+      directory: c:/Users/senad/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/4.3.3
+    - name: tools.ninja.build.ninja\1.13.2
+      origin: installed
+      provider:
+        type: vcpkg
+        id: arm.environment-manager
+      directory: c:/Users/senad/.vcpkg/artifacts/2139c4c6/tools.ninja.build.ninja
